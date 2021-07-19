@@ -1,0 +1,9 @@
+ncverilog(64): 12.20-s012: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+TOOL:	ncverilog	12.20-s012: Started on Nov 20, 2019 at 19:47:31 CST
+ncverilog
+	+access+r
+	AudRecorder_tb.sv
+	AudRecorder.sv
+ncverilog: *E,FILEMIS: Cannot find the provided file AudRecorder_tb.sv.
+ncverilog: *E,FILEMIS: Cannot find the provided file AudRecorder.sv.
+TOOL:	ncverilog	12.20-s012: Exiting on Nov 20, 2019 at 19:47:31 CST  (total: 00:00:00)

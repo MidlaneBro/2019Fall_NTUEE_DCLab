@@ -1,0 +1,43 @@
+
+State Machine - |DE2_115_SD_Card_Audio_Player|DE2_115_SOPC:u0|fft_n_ifft:scorer_0|state_r
+Name state_r.S_SCORING state_r.S_SD state_r.S_VOICE state_r.S_IDLE state_r.S_PAUSE 
+state_r.S_IDLE 0 0 0 0 0 
+state_r.S_VOICE 0 0 1 1 0 
+state_r.S_SD 0 1 0 1 0 
+state_r.S_SCORING 1 0 0 1 0 
+state_r.S_PAUSE 0 0 0 1 1 
+
+State Machine - |DE2_115_SD_Card_Audio_Player|DE2_115_SOPC:u0|fft_n_ifft:scorer_0|fft_n_ifft_fft_ii_0:fft_sd|auk_dspip_r22sdf_top:auk_dspip_r22sdf_top_inst|auk_dspip_avalon_streaming_block_source:source_control_inst|state
+Name state.OUT_3 state.OUT_2 state.OUT_1 state.IDLE 
+state.IDLE 0 0 0 0 
+state.OUT_1 0 0 1 1 
+state.OUT_2 0 1 0 1 
+state.OUT_3 1 0 0 1 
+
+State Machine - |DE2_115_SD_Card_Audio_Player|DE2_115_SOPC:u0|fft_n_ifft:scorer_0|fft_n_ifft_fft_ii_0:fft_voice|auk_dspip_r22sdf_top:auk_dspip_r22sdf_top_inst|auk_dspip_avalon_streaming_block_source:source_control_inst|state
+Name state.OUT_3 state.OUT_2 state.OUT_1 state.IDLE 
+state.IDLE 0 0 0 0 
+state.OUT_1 0 0 1 1 
+state.OUT_2 0 1 0 1 
+state.OUT_3 1 0 0 1 
+
+State Machine - |DE2_115_SD_Card_Audio_Player|DE2_115_SOPC:u0|fft_n_ifft:scorer_0|evaluate:evaluate_0|state
+Name state.S_EVALUATE state.S_COMPARE state.00 
+state.00 0 0 0 
+state.S_EVALUATE 1 0 1 
+state.S_COMPARE 0 1 1 
+
+State Machine - |DE2_115_SD_Card_Audio_Player|DE2_115_SOPC:u0|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_cpu:cpu|DE2_115_SOPC_cpu_cpu_nios2_oci:the_DE2_115_SOPC_cpu_cpu_nios2_oci|DE2_115_SOPC_cpu_cpu_debug_slave_wrapper:the_DE2_115_SOPC_cpu_cpu_debug_slave_wrapper|DE2_115_SOPC_cpu_cpu_debug_slave_tck:the_DE2_115_SOPC_cpu_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |DE2_115_SD_Card_Audio_Player|DE2_115_SOPC:u0|TERASIC_IRM:terasic_irda_0|IRDA_RECEIVE_Terasic:IRDA_RECEIVE_Terasic_inst|state
+Name state.IDLE state.DATAREAD state.GUIDANCE 
+state.IDLE 0 0 0 
+state.GUIDANCE 1 0 1 
+state.DATAREAD 1 1 0 

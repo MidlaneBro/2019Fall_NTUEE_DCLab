@@ -1,0 +1,61 @@
+ncverilog(64): 12.20-s012: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+TOOL:	ncverilog	12.20-s012: Started on Nov 23, 2019 at 20:37:41 CST
+ncverilog
+	+access+r
+	AudDSP_tb.sv
+	AudDSP.sv
+Recompiling... reason: file './AudDSP_tb.sv' is newer than expected.
+	expected: Sat Nov 23 20:21:56 2019
+	actual:   Sat Nov 23 20:37:28 2019
+file: AudDSP_tb.sv
+	module worklib.tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.tb:sv <0x372e990c>
+			streams:   4, words:  9037
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           25      25
+		Scalar wires:         6       -
+		Vectored wires:       5       -
+		Always blocks:        4       4
+		Initial blocks:       1       1
+		Cont. assignments:    0       2
+		Pseudo assignments:   1       1
+	Writing initial simulation snapshot: worklib.tb:sv
+Loading snapshot worklib.tb:sv .................... Done
+*Verdi3* Loading libsscore_ius122.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /opt/CAD/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+   600
+   600
+   700
+   800
+   900
+  1000
+  1100
+  1100
+  1200
+  1225
+  1250
+  1275
+  1300
+  1325
+  1325
+  1350
+  1425
+  1500
+  1575
+  1650
+  1725
+Simulation complete via $finish(1) at time 31800 NS + 0
+./AudDSP_tb.sv:87 	$finish;
+ncsim> exit
+TOOL:	ncverilog	12.20-s012: Exiting on Nov 23, 2019 at 20:38:28 CST  (total: 00:00:47)

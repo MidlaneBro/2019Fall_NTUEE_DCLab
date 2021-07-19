@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/DE2_115_SOPC_altpll_audio.vo"
+   type="VERILOG"
+   library="altpll_audio" />
+ <file
+   path="simulation/submodules/DE2_115_SOPC_altpll.vo"
+   type="VERILOG"
+   library="altpll" />
+ <file
+   path="simulation/submodules/TERASIC_IRM.v"
+   type="VERILOG"
+   library="Terasic_IrDA_0" />
+ <file
+   path="simulation/submodules/irda_receive_terasic.v"
+   type="VERILOG"
+   library="Terasic_IrDA_0" />
+ <file path="simulation/DE2_115_SOPC.v" type="VERILOG" />
+ <topLevel name="DE2_115_SOPC" />
+ <deviceFamily name="cycloneive" />
+ <modelMap
+   controllerPath="DE2_115_SOPC.onchip_memory2"
+   modelPath="DE2_115_SOPC.onchip_memory2" />
+</simPackage>

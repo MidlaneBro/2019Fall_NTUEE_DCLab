@@ -1,0 +1,33 @@
+
+State Machine - |DE2_115|Top:top0|state_r
+Name state_r.S_PLAY_PAUSE state_r.S_PLAY state_r.S_RECD_PAUSE state_r.S_RECD state_r.S_I2C state_r.S_IDLE 
+state_r.S_IDLE 0 0 0 0 0 0 
+state_r.S_I2C 0 0 0 0 1 1 
+state_r.S_RECD 0 0 0 1 0 1 
+state_r.S_RECD_PAUSE 0 0 1 0 0 1 
+state_r.S_PLAY 0 1 0 0 0 1 
+state_r.S_PLAY_PAUSE 1 0 0 0 0 1 
+
+State Machine - |DE2_115|Top:top0|AudRecorder:recorder0|state_r
+Name state_r.S_RECORD_FINISHED state_r.S_RECORD state_r.S_NOT_RECORD state_r.S_IDLE 
+state_r.S_IDLE 0 0 0 0 
+state_r.S_NOT_RECORD 0 0 1 1 
+state_r.S_RECORD 0 1 0 1 
+state_r.S_RECORD_FINISHED 1 0 0 1 
+
+State Machine - |DE2_115|Top:top0|AudPlayer:player0|state_r
+Name state_r.S_PLAY 
+state_r.S_IDLE 0 
+state_r.S_PLAY 1 
+
+State Machine - |DE2_115|Top:top0|AudDSP:dsp0|state_r
+Name state_r.S_IDLE state_r.S_PAUSE state_r.S_PROC 
+state_r.S_IDLE 0 0 0 
+state_r.S_PROC 1 0 1 
+state_r.S_PAUSE 1 1 0 
+
+State Machine - |DE2_115|Top:top0|I2cInitializer:init0|state_r
+Name state_r.S_IDLE state_r.S_WAITACK state_r.S_TRANSMIT 
+state_r.S_IDLE 0 0 0 
+state_r.S_TRANSMIT 1 0 1 
+state_r.S_WAITACK 1 1 0 

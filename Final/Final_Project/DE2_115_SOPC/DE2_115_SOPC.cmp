@@ -1,0 +1,49 @@
+	component DE2_115_SOPC is
+		port (
+			Terasic_IrDA_0_conduit_end_export                                                 : in    std_logic                     := 'X';             -- export
+			altpll_audio_locked_conduit_export                                                : out   std_logic;                                        -- export
+			altpll_audio_phasedone_conduit_export                                             : out   std_logic;                                        -- export
+			altpll_c1_clk                                                                     : out   std_logic;                                        -- clk
+			altpll_c2_clk                                                                     : out   std_logic;                                        -- clk
+			altpll_c3_clk                                                                     : out   std_logic;                                        -- clk
+			altpll_locked_conduit_export                                                      : out   std_logic;                                        -- export
+			altpll_phasedone_conduit_export                                                   : out   std_logic;                                        -- export
+			audio_conduit_end_XCK                                                             : out   std_logic;                                        -- XCK
+			audio_conduit_end_ADCDAT                                                          : in    std_logic                     := 'X';             -- ADCDAT
+			audio_conduit_end_ADCLRC                                                          : in    std_logic                     := 'X';             -- ADCLRC
+			audio_conduit_end_DACDAT                                                          : out   std_logic;                                        -- DACDAT
+			audio_conduit_end_DACLRC                                                          : in    std_logic                     := 'X';             -- DACLRC
+			audio_conduit_end_BCLK                                                            : in    std_logic                     := 'X';             -- BCLK
+			clk_50_clk_in_clk                                                                 : in    std_logic                     := 'X';             -- clk
+			clk_50_clk_in_reset_reset_n                                                       : in    std_logic                     := 'X';             -- reset_n
+			eep_i2c_scl_external_connection_export                                            : out   std_logic;                                        -- export
+			eep_i2c_sda_external_connection_export                                            : inout std_logic                     := 'X';             -- export
+			i2c_scl_external_connection_export                                                : out   std_logic;                                        -- export
+			i2c_sda_external_connection_export                                                : inout std_logic                     := 'X';             -- export
+			key_external_connection_export                                                    : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- export
+			lcd_external_RS                                                                   : out   std_logic;                                        -- RS
+			lcd_external_RW                                                                   : out   std_logic;                                        -- RW
+			lcd_external_data                                                                 : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- data
+			lcd_external_E                                                                    : out   std_logic;                                        -- E
+			ledg_external_connection_export                                                   : out   std_logic_vector(8 downto 0);                     -- export
+			ledr_external_connection_export                                                   : out   std_logic_vector(17 downto 0);                    -- export
+			rs232_external_connection_rxd                                                     : in    std_logic                     := 'X';             -- rxd
+			rs232_external_connection_txd                                                     : out   std_logic;                                        -- txd
+			rs232_external_connection_cts_n                                                   : in    std_logic                     := 'X';             -- cts_n
+			rs232_external_connection_rts_n                                                   : out   std_logic;                                        -- rts_n
+			sd_clk_external_connection_export                                                 : out   std_logic;                                        -- export
+			sd_cmd_external_connection_export                                                 : inout std_logic                     := 'X';             -- export
+			sd_dat_external_connection_export                                                 : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- export
+			sd_wp_n_external_connection_export                                                : in    std_logic                     := 'X';             -- export
+			seg7_conduit_end_export                                                           : out   std_logic_vector(63 downto 0);                    -- export
+			sma_in_external_connection_export                                                 : in    std_logic                     := 'X';             -- export
+			sma_out_external_connection_export                                                : out   std_logic;                                        -- export
+			sw_external_connection_export                                                     : in    std_logic_vector(17 downto 0) := (others => 'X'); -- export
+			tri_state_bridge_flash_bridge_0_export_av_tri_s1_cfi_flash_0_tcm_address_out      : out   std_logic_vector(22 downto 0);                    -- av_tri_s1_cfi_flash_0_tcm_address_out
+			tri_state_bridge_flash_bridge_0_export_av_tri_s1_cfi_flash_0_tcm_write_n_out      : out   std_logic_vector(0 downto 0);                     -- av_tri_s1_cfi_flash_0_tcm_write_n_out
+			tri_state_bridge_flash_bridge_0_export_av_tri_s1_cfi_flash_0_tcm_chipselect_n_out : out   std_logic_vector(0 downto 0);                     -- av_tri_s1_cfi_flash_0_tcm_chipselect_n_out
+			tri_state_bridge_flash_bridge_0_export_av_tri_s1_cfi_flash_0_tcm_read_n_out       : out   std_logic_vector(0 downto 0);                     -- av_tri_s1_cfi_flash_0_tcm_read_n_out
+			tri_state_bridge_flash_bridge_0_export_av_tri_s1_cfi_flash_0_tcm_data_out         : inout std_logic_vector(7 downto 0)  := (others => 'X')  -- av_tri_s1_cfi_flash_0_tcm_data_out
+		);
+	end component DE2_115_SOPC;
+

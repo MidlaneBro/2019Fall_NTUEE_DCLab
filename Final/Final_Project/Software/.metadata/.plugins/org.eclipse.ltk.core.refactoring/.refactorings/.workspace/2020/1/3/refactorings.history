@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;DE2_115_SD_Card_Audio_Player/main_modify.c&apos;" deleteContents="false" description="Delete resource &apos;DE2_115_SD_Card_Audio_Player/main_modify.c&apos;" element1="/DE2_115_SD_Card_Audio_Player/main_modify.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1579002365301"/>
+</session>

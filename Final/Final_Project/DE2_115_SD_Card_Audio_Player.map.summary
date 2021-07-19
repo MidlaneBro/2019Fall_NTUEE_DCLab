@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jan 15 03:33:14 2020
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
+Revision Name : DE2_115_SD_Card_Audio_Player
+Top-level Entity Name : DE2_115_SD_Card_Audio_Player
+Family : Cyclone IV E
+Total logic elements : 10,086
+    Total combinational functions : 8,136
+    Dedicated logic registers : 5,436
+Total registers : 5436
+Total pins : 480
+Total virtual pins : 0
+Total memory bits : 2,186,144
+Embedded Multiplier 9-bit elements : 6
+Total PLLs : 2

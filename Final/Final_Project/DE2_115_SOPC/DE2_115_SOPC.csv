@@ -1,0 +1,57 @@
+# system info DE2_115_SOPC on 2020.01.14.00:13:11
+system_info:
+name,value
+DEVICE,EP4CE115F29C7
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1578931944
+#
+#
+# Files generated for DE2_115_SOPC on 2020.01.14.00:13:11
+files:
+filepath,kind,attributes,module,is_top
+simulation/DE2_115_SOPC.v,VERILOG,,DE2_115_SOPC,true
+simulation/submodules/TERASIC_IRM.v,VERILOG,,TERASIC_IRM,false
+simulation/submodules/irda_receive_terasic.v,VERILOG,,TERASIC_IRM,false
+simulation/submodules/DE2_115_SOPC_altpll.vo,VERILOG,,DE2_115_SOPC_altpll,false
+simulation/submodules/DE2_115_SOPC_altpll_audio.vo,VERILOG,,DE2_115_SOPC_altpll_audio,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+DE2_115_SOPC.Terasic_IrDA_0,TERASIC_IRM
+DE2_115_SOPC.altpll,DE2_115_SOPC_altpll
+DE2_115_SOPC.altpll_audio,DE2_115_SOPC_altpll_audio
+DE2_115_SOPC.audio,AUDIO_IF
+DE2_115_SOPC.av_tri_s1_cfi_flash_0,DE2_115_SOPC_av_tri_s1_cfi_flash_0
+DE2_115_SOPC.clock_crossing_io,altera_avalon_mm_clock_crossing_bridge
+DE2_115_SOPC.cpu,DE2_115_SOPC_cpu
+DE2_115_SOPC.eep_i2c_scl,DE2_115_SOPC_eep_i2c_scl
+DE2_115_SOPC.i2c_scl,DE2_115_SOPC_eep_i2c_scl
+DE2_115_SOPC.sd_clk,DE2_115_SOPC_eep_i2c_scl
+DE2_115_SOPC.sma_out,DE2_115_SOPC_eep_i2c_scl
+DE2_115_SOPC.eep_i2c_sda,DE2_115_SOPC_eep_i2c_sda
+DE2_115_SOPC.i2c_sda,DE2_115_SOPC_eep_i2c_sda
+DE2_115_SOPC.sd_cmd,DE2_115_SOPC_eep_i2c_sda
+DE2_115_SOPC.jtag_uart,DE2_115_SOPC_jtag_uart
+DE2_115_SOPC.key,DE2_115_SOPC_key
+DE2_115_SOPC.lcd,DE2_115_SOPC_lcd
+DE2_115_SOPC.ledg,DE2_115_SOPC_ledg
+DE2_115_SOPC.ledr,DE2_115_SOPC_ledr
+DE2_115_SOPC.onchip_memory2,DE2_115_SOPC_onchip_memory2
+DE2_115_SOPC.rs232,DE2_115_SOPC_rs232
+DE2_115_SOPC.scorer_0,DE2_115_SOPC_scorer_0
+DE2_115_SOPC.sd_dat,DE2_115_SOPC_sd_dat
+DE2_115_SOPC.sd_wp_n,DE2_115_SOPC_sd_wp_n
+DE2_115_SOPC.sma_in,DE2_115_SOPC_sd_wp_n
+DE2_115_SOPC.seg7,SEG7_IF
+DE2_115_SOPC.sw,DE2_115_SOPC_sw
+DE2_115_SOPC.sysid,DE2_115_SOPC_sysid
+DE2_115_SOPC.timer,DE2_115_SOPC_timer
+DE2_115_SOPC.tri_state_bridge_flash_bridge_0,DE2_115_SOPC_tri_state_bridge_flash_bridge_0
+DE2_115_SOPC.tristate_conduit_pin_sharer_0,DE2_115_SOPC_tristate_conduit_pin_sharer_0
+DE2_115_SOPC.mm_interconnect_0,DE2_115_SOPC_mm_interconnect_0
+DE2_115_SOPC.irq_mapper,DE2_115_SOPC_irq_mapper
+DE2_115_SOPC.irq_synchronizer,altera_irq_clock_crosser
+DE2_115_SOPC.rst_controller,altera_reset_controller
+DE2_115_SOPC.rst_controller_001,altera_reset_controller
+DE2_115_SOPC.rst_controller_002,altera_reset_controller

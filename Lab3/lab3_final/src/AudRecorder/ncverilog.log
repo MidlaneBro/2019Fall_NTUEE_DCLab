@@ -1,0 +1,41 @@
+ncverilog(64): 12.20-s012: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+TOOL:	ncverilog	12.20-s012: Started on Nov 23, 2019 at 17:34:24 CST
+ncverilog
+	+access+r
+	AudRecorder_tb.sv
+	AudRecorder.sv
+file: AudRecorder_tb.sv
+	module worklib.tb:sv
+		errors: 0, warnings: 0
+file: AudRecorder.sv
+	module worklib.AudRecorder:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.AudRecorder:sv <0x67177db4>
+			streams:   6, words:  4727
+		worklib.tb:sv <0x577e349d>
+			streams:   3, words: 35184
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:          19      19
+		Scalar wires:        7       -
+		Vectored wires:      2       -
+		Always blocks:       5       5
+		Initial blocks:      1       1
+		Cont. assignments:   0       2
+	Writing initial simulation snapshot: worklib.tb:sv
+Loading snapshot worklib.tb:sv .................... Done
+*Verdi3* Loading libsscore_ius122.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /opt/CAD/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 3540 NS + 0
+./AudRecorder_tb.sv:184 	$finish;
+ncsim> exit
+TOOL:	ncverilog	12.20-s012: Exiting on Nov 23, 2019 at 17:35:11 CST  (total: 00:00:47)

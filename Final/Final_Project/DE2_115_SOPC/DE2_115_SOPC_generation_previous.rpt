@@ -1,0 +1,85 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\ray94\Desktop\DE2_115_demonstrations\DE2_115_SD_Card_Audio_Player\DE2_115_SOPC.qsys --block-symbol-file --output-directory=C:\Users\ray94\Desktop\DE2_115_demonstrations\DE2_115_SD_Card_Audio_Player\DE2_115_SOPC --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading DE2_115_SD_Card_Audio_Player/DE2_115_SOPC.qsys
+Progress: Reading input file
+Progress: Adding Terasic_IrDA_0 [TERASIC_IRM 1.0]
+Progress: Parameterizing module Terasic_IrDA_0
+Progress: Adding altpll [altpll 15.0]
+Progress: Parameterizing module altpll
+Progress: Adding altpll_audio [altpll 15.0]
+Progress: Parameterizing module altpll_audio
+Progress: Adding audio [AUDIO_IF 1.0]
+Progress: Parameterizing module audio
+Progress: Adding av_tri_s1_cfi_flash_0 [altera_generic_tristate_controller 15.0]
+Progress: Parameterizing module av_tri_s1_cfi_flash_0
+Progress: Adding clk_50 [clock_source 15.0]
+Progress: Parameterizing module clk_50
+Progress: Adding clock_crossing_io [altera_avalon_mm_clock_crossing_bridge 15.0]
+Progress: Parameterizing module clock_crossing_io
+Progress: Adding cpu [altera_nios2_gen2 15.0]
+Progress: Parameterizing module cpu
+Progress: Adding eep_i2c_scl [altera_avalon_pio 15.0]
+Progress: Parameterizing module eep_i2c_scl
+Progress: Adding eep_i2c_sda [altera_avalon_pio 15.0]
+Progress: Parameterizing module eep_i2c_sda
+Progress: Adding i2c_scl [altera_avalon_pio 15.0]
+Progress: Parameterizing module i2c_scl
+Progress: Adding i2c_sda [altera_avalon_pio 15.0]
+Progress: Parameterizing module i2c_sda
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 15.0]
+Progress: Parameterizing module jtag_uart
+Progress: Adding key [altera_avalon_pio 15.0]
+Progress: Parameterizing module key
+Progress: Adding lcd [altera_avalon_lcd_16207 15.0]
+Progress: Parameterizing module lcd
+Progress: Adding ledg [altera_avalon_pio 15.0]
+Progress: Parameterizing module ledg
+Progress: Adding ledr [altera_avalon_pio 15.0]
+Progress: Parameterizing module ledr
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 15.0]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding rs232 [altera_avalon_uart 15.0]
+Progress: Parameterizing module rs232
+Progress: Adding scorer_0 [scorer 1.0]
+Progress: Parameterizing module scorer_0
+Progress: Adding sd_clk [altera_avalon_pio 15.0]
+Progress: Parameterizing module sd_clk
+Progress: Adding sd_cmd [altera_avalon_pio 15.0]
+Progress: Parameterizing module sd_cmd
+Progress: Adding sd_dat [altera_avalon_pio 15.0]
+Progress: Parameterizing module sd_dat
+Progress: Adding sd_wp_n [altera_avalon_pio 15.0]
+Progress: Parameterizing module sd_wp_n
+Progress: Adding seg7 [SEG7_IF 1.0]
+Progress: Parameterizing module seg7
+Progress: Adding sma_in [altera_avalon_pio 15.0]
+Progress: Parameterizing module sma_in
+Progress: Adding sma_out [altera_avalon_pio 15.0]
+Progress: Parameterizing module sma_out
+Progress: Adding sw [altera_avalon_pio 15.0]
+Progress: Parameterizing module sw
+Progress: Adding sysid [altera_avalon_sysid_qsys 15.0]
+Progress: Parameterizing module sysid
+Progress: Adding timer [altera_avalon_timer 15.0]
+Progress: Parameterizing module timer
+Progress: Adding tri_state_bridge_flash_bridge_0 [altera_tristate_conduit_bridge 15.0]
+Progress: Parameterizing module tri_state_bridge_flash_bridge_0
+Progress: Adding tristate_conduit_pin_sharer_0 [altera_tristate_conduit_pin_sharer 15.0]
+Progress: Parameterizing module tristate_conduit_pin_sharer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: DE2_115_SOPC.av_tri_s1_cfi_flash_0: Properties (isFlash,isMemoryDevice,isNonVolatileStorage) have been set on interface uas - in composed mode these are ignored
+Info: DE2_115_SOPC.eep_i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DE2_115_SOPC.i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DE2_115_SOPC.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DE2_115_SOPC.sd_cmd: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DE2_115_SOPC.sd_dat: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DE2_115_SOPC.sd_wp_n: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DE2_115_SOPC.sma_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DE2_115_SOPC.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DE2_115_SOPC.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE2_115_SOPC.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
